@@ -1,0 +1,13 @@
+.idea
+*/.directory
+venv
+tsme_examples
+**.pyc
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+# setup files
+*.egg-info/
+build/
+!docs/build/
+dist/
+notes.md
