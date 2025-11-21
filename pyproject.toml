@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools >= 61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[project]
+name = "tsme"
+version = "0.0.81"
+dependencies = [
+    "numpy",
+    "findiff",
+    "matplotlib",
+    "tabulate",
+    "tqdm",
+    "scipy",
+    "scikit-learn",
+    "hyperopt",
+    "freud-analysis",
+]
+requires-python = ">=3.7"
+authors = [
+  {name = "Oliver Mai", email = "oliver.mai@uni-muenster.de"},
+]
+
+description = 'A package that provides estimation methods for differential equations of dynamical systems based on timeseries data.'
+readme = "README.md"
+license = "GPL-3.0-or-later"
+license-files = ["LICEN[CS]E.*"]
+keywords = ["modeling", "estimation", "time series", "differential equations", "delay equations", "partial differential"]
+classifiers = [
+    'Programming Language :: Python',
+    'Development Status :: 3 - Alpha',
+    'Natural Language :: English',
+    'Operating System :: OS Independent',
+    'Topic :: Scientific/Engineering :: Physics',
+]
+
+[project.optional-dependencies]
+documentation = [
+    "sphinx",
+    "nbsphinx",
+    "sphinx_rtd_theme",
+    "numpydoc",
+]
+
+[project.urls]
+Homepage = "https://cdsc-cosyml.github.io/homepage/"
+Documentation = "https://nonlinear-physics.zivgitlabpages.uni-muenster.de/ag-kamps/tsme/"
+Repository = "https://github.com/CDSC-CoSyML/tsme.git"
+
+
+[project.entry-points."spam.magical"]
+tomatoes = "spam:main_tomatoes"
